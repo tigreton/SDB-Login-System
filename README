@@ -7,3 +7,17 @@ donde quieres guardar a tus usuarios
 Change the config.inc.php in aws-sdk with your Amazon credencials
 ----
 Cambia el config.inc.php en aws-sdk con tus credenciales de Amazon
+////\\\\
+In "mostrar.php" you can change these lines:
+$select = $sdb->select("SELECT * FROM `{$domain}` WHERE usuario = 'admin'");
+$select2 = $sdb->select("SELECT count(*) from `{$domain}` where usuario = 'admin'");
+And change admin for searching a user.
+Or this to show all users registered
+$select = $sdb->select("SELECT * FROM `{$domain}`");
+----
+En "mostrar.php" puedes cambiar estas lineas:
+$select = $sdb->select("SELECT * FROM `{$domain}` WHERE usuario = 'admin'");
+$select2 = $sdb->select("SELECT count(*) from `{$domain}` where usuario = 'admin'");
+Y cambiar admin para buscar a un usuario.
+O esto otro para mostrar a todos los usuarios registrados
+$select = $sdb->select("SELECT * FROM `{$domain}`");
