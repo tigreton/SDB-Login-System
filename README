@@ -1,0 +1,9 @@
+Change the config.php to set up your domain name
+where you want to save your users
+----
+Cambia el config.php para poner el nombre del dominio
+donde quieres guardar a tus usuarios
+////\\\\
+Change the config.inc.php in aws-sdk with your Amazon credencials
+----
+Cambia el config.inc.php en aws-sdk con tus credenciales de Amazon
