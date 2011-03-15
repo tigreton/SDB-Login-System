@@ -1,12 +1,8 @@
 <?php 
 #lo necesario
-require_once '../funciones/html.php';
-require_once '../aws-sdk/sdk.class.php';
+require_once 'config.php';
 $time_start = microtime(true);
 $sdb = new AmazonSDB();
-require_once 'config.php';
-
-
 
 
 if(isset($_POST['Submit']))

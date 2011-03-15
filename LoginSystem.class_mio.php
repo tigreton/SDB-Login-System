@@ -31,8 +31,6 @@ function doLogin($username, $password)
 	{
                 #lo necesario
                 #the necessary
-                require_once '../funciones/html.php';
-                require_once '../aws-sdk/sdk.class.php';
                 include 'config.php';
                 $time_start = microtime(true);
                 $sdb = new AmazonSDB();

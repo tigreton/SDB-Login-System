@@ -1,12 +1,10 @@
 <?php
 #lo necesario
-require_once '../funciones/html.php';
-require_once '../aws-sdk/sdk.class.php';
+include 'config.php';
 $time_start = microtime(true);
 $sdb = new AmazonSDB();
-include 'config.php';
-
-$select = $sdb->select("SELECT * FROM `{$domain}` WHERE usuario = 'admin'");
+//WHERE usuario = 'admin'
+$select = $sdb->select("SELECT * FROM `{$domain}` ");
 $select2 = $sdb->select("SELECT count(*) from `{$domain}` where usuario = 'admin'");
 
         $items = $select->body->Item();
@@ -20,7 +18,7 @@ $select2 = $sdb->select("SELECT count(*) from `{$domain}` where usuario = 'admin
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<title>crear_dom_usuarios</title>
+		<title>Show users || Mostrar usuarios</title>
 		<style type="text/css" media="screen">
 		body {
 			margin: 0;
@@ -48,21 +46,24 @@ $select2 = $sdb->select("SELECT count(*) from `{$domain}` where usuario = 'admin
 		</style>
 	</head>
 	<body>
-<?php //print_r($select2);?>
+
             <br><br><br><br>
                <!-- Display HTML table -->
 		<?php
+                include "index.php";
                 echo "Usuario: ". $data[rows][0][usuario][0];
-        echo " con contraseña: ".$data[rows][0][password][0];
+                echo " con contraseña: ".$data[rows][0][password][0];
                 echo $html;
                 ?>
-                <br><br><br><br>
+                <br><br><br>
                 <?php
+                /*
                 echo "<br><br><br>";
                 echo "Cantidad de usuarios con el nombre admin: ". $data2[rows][0][Count][0];
                 echo $html2;
-                print_r($data);
-                 ?>
+                 * 
+                 */
+                ?>
 
 	</body>
 </html>

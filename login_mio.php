@@ -1,11 +1,9 @@
 <?php
 session_start();
 #lo necesario
-require_once '../funciones/html.php';
-require_once '../aws-sdk/sdk.class.php';
+include 'config.php';
 $time_start = microtime(true);
 $sdb = new AmazonSDB();
-include 'config.php';
 require_once('LoginSystem.class_mio.php');
 
 	

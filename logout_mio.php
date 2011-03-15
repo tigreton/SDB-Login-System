@@ -3,6 +3,7 @@
  * 	logout.php
  * 
  * 	signs the user out, destroying session data etc.
+ *      Desloguea al usuario destruyendo toda sus datos de sesion
  * 
  */
 

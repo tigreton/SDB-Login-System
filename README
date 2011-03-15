@@ -20,4 +20,4 @@ $select = $sdb->select("SELECT * FROM `{$domain}` WHERE usuario = 'admin'");
 $select2 = $sdb->select("SELECT count(*) from `{$domain}` where usuario = 'admin'");
 Y cambiar admin para buscar a un usuario.
 O esto otro para mostrar a todos los usuarios registrados
-$select = $sdb->select("SELECT * FROM `{$domain}`");
+$select = $sdb->select("SELECT * FROM `{$domain}`"); 

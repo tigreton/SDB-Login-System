@@ -19,30 +19,31 @@
  * Constant: AWS_KEY
  * 	Amazon Web Services Key. Found in the AWS Security Credentials. You can also pass this value as the first parameter to a service constructor.
  */
-define('AWS_KEY', '');
+define('AWS_KEY', 'AKIAIETHJQ24RMJRHZ4Q');
 /**
  * Constant: AWS_SECRET_KEY
  * 	Amazon Web Services Secret Key. Found in the AWS Security Credentials. You can also pass this value as the second parameter to a service constructor.
  */
-define('AWS_SECRET_KEY', '');
+define('AWS_SECRET_KEY', 'SPNlFhVlL3J2+vDdYhGXvZg5uaeP5PyPvQBQlLzd');
 
 /**
  * Constant: AWS_ACCOUNT_ID
  * 	Amazon Account ID without dashes. Used for identification with Amazon EC2. Found in the AWS Security Credentials.
  */
-define('AWS_ACCOUNT_ID', '');
+define('AWS_ACCOUNT_ID', '799204938679');
 
 /**
  * Constant: AWS_CANONICAL_ID
  * 	Your CanonicalUser ID. Used for setting access control settings in AmazonS3. Found in the AWS Security Credentials.
  */
-define('AWS_CANONICAL_ID', '');
+define('AWS_CANONICAL_ID', '1f6017848e3fe8f435af3ac6d94819e877854ed6349d934280f9cef203a59e4b
+');
 
 /**
  * Constant: AWS_CANONICAL_NAME
  * 	Your CanonicalUser DisplayName. Used for setting access control settings in AmazonS3. Found in the AWS Security Credentials (i.e. "Welcome, AWS_CANONICAL_NAME").
  */
-define('AWS_CANONICAL_NAME', '');
+define('AWS_CANONICAL_NAME', 'tigreton');
 
 /**
  * Constant: AWS_MFA_SERIAL
@@ -54,7 +55,7 @@ define('AWS_MFA_SERIAL', '');
  * Constant: AWS_CLOUDFRONT_KEYPAIR_ID
  * 	Amazon CloudFront key-pair to use for signing private URLs. Found in the AWS Security Credentials. This can be set programmatically with AmazonCloudFront::set_keypair_id().
  */
-define('AWS_CLOUDFRONT_KEYPAIR_ID', '');
+define('AWS_CLOUDFRONT_KEYPAIR_ID', 'tigreton');
 
 /**
  * Constant: AWS_PRIVATE_KEY_PEM
