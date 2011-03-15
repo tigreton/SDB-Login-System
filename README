@@ -12,6 +12,10 @@ where you want to save your users
 Cambia el config.php para poner el nombre del dominio
 donde quieres guardar a tus usuarios
 ////\\\\
+Execute crear_dominio.php to create your domain specified in config.php
+----
+Ejecuta crear_dominio.php para crear el dominio especificado en config.php
+////\\\\
 In "mostrar.php" you can change these lines:
 $select = $sdb->select("SELECT * FROM `{$domain}` WHERE usuario = 'admin'");
 $select2 = $sdb->select("SELECT count(*) from `{$domain}` where usuario = 'admin'");
